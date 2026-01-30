@@ -26,6 +26,10 @@ export const ToolNames = {
   WEB_SEARCH: 'web_search',
   LS: 'list_directory',
   LSP: 'lsp',
+  SCREENSHOT: 'screenshot',
+  MOVE_MOUSE: 'move_mouse',
+  DRAG: 'drag',
+  CLICK: 'click',
 } as const;
 
 /**
@@ -50,6 +54,10 @@ export const ToolDisplayNames = {
   WEB_SEARCH: 'WebSearch',
   LS: 'ListFiles',
   LSP: 'Lsp',
+  SCREENSHOT: 'Screenshot',
+  MOVE_MOUSE: 'MoveMouse',
+  DRAG: 'Drag',
+  CLICK: 'Click',
 } as const;
 
 // Migration from old tool names to new tool names

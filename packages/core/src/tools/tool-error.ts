@@ -69,4 +69,10 @@ export enum ToolErrorType {
 
   // WebSearch-specific Errors
   WEB_SEARCH_FAILED = 'web_search_failed',
+
+  // Screenshot-specific Errors
+  SCREENSHOT_ERROR = 'screenshot_error',
+
+  // Mouse control Errors
+  MOUSE_CONTROL_ERROR = 'mouse_control_error',
 }

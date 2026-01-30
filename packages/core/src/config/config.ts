@@ -61,6 +61,8 @@ import { WebFetchTool } from '../tools/web-fetch.js';
 import { WebSearchTool } from '../tools/web-search/index.js';
 import { WriteFileTool } from '../tools/write-file.js';
 import { LspTool } from '../tools/lsp.js';
+import { ScreenshotTool } from '../tools/screenshot.js';
+import { MoveMouseTool, ClickTool, DragTool } from '../tools/mouse.js';
 import type { LspClient } from '../lsp/types.js';
 
 // Other modules
@@ -1671,6 +1673,12 @@ export class Config {
       // Register the unified LSP tool
       registerCoreTool(LspTool, this);
     }
+
+    // Register game automation tools
+    registerCoreTool(ScreenshotTool, this);
+    registerCoreTool(MoveMouseTool, this);
+    registerCoreTool(ClickTool, this);
+    registerCoreTool(DragTool, this);
 
     await registry.discoverAllTools();
     console.debug('ToolRegistry created', registry.getAllToolNames());
